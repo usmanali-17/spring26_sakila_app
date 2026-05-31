@@ -1,5 +1,5 @@
-# Author: Usman Ali
-# Date: May 31, 2026
+# Authors: Usman Ali & Ibrahim Asad
+# Dates: May 31, 2026
 
 import os
 
@@ -9,3 +9,4 @@ class Config:
     MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD', 'admin')
     MYSQL_DB = os.environ.get('MYSQL_DB', 'sakila')
     CONNECTION_TIMEOUT = int(os.environ.get('CONNECTION_TIMEOUT', '30'))
+    HEALTH_CHECK_INTERVAL = int(os.environ.get('HEALTH_CHECK_INTERVAL', '10'))
